@@ -9,4 +9,4 @@ The dataset simulates a simplified marketing scenario: determining whether an ad
 🧭 Plots decision boundaries  
 🔎 Includes both training and test evaluation  
 
-Created by [Joe Domaleski]([https://www.linkedin.com/in/joedomaleski](https://www.linkedin.com/in/joedom/])/) as part of my *Marketing Data Science* blog series.
+Created by [Joe Domaleski](https://www.linkedin.com/in/joedom/) as part of my *Marketing Data Science* blog series.
