@@ -37,6 +37,18 @@ library(ggplot2)  # Used for plotting
 # assumes you have the dataset in a CSV in the local working directory
 
 df <- read.csv("simple_nn_data.csv")
+head(df)
+
+# Plot the raw data to see how budget and engagement relate to success
+ggplot(df, aes(x = x1, y = x2, color = factor(y))) +
+  geom_point(size = 2, alpha = 0.8) +
+  geom_abline(slope = -1, intercept = 1, linetype = "dashed", color = "gray40") +
+  scale_color_manual(values = c("blue", "red"), labels = c("Not Successful", "Successful")) +
+  labs(title = "Ad Campaign Dataset",
+       x = "Budget Intensity (x1)",
+       y = "Audience Engagement (x2)",
+       color = "Outcome") +
+  theme_minimal()
 
 
 # -------------------------------------------------------
